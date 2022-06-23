@@ -19,12 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: TIL
-email: ejjoo7994@gmail.com
+email: matkimchi_@naver.com
 description: >- # this means to ignore newlines until "baseurl:"
   by Jang
 # baseurl: "/" # the subpath of your site, e.g. /blog
 #url: "https://kyounghunjang.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: ejjoo
+github_username: kyounghoonJang
 highlighter: rouge
 svg:
   optimize: true
