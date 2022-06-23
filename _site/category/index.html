@@ -24,7 +24,19 @@
 	  	<a class="nav-item" href="/">Articles</a>
 	  </li>
 	  
-
+	  
+	    
+	  
+	    
+	      
+	    
+	  
+	    
+	      
+	    
+	  
+	    
+	  
 	    
 	  
 	</ul>
@@ -48,13 +60,6 @@
 	    	</a>
  		</li>
 	    
-	    <li>
-	    	<a class="nav-item" href="/category/#kubernates/docker">
-				<span class="name">kubernates/docker</span>
-				<span class="badge">1</span>
-	    	</a>
- 		</li>
-	    
 	  </nav>
 	</ul>
 </div>
@@ -64,47 +69,12 @@
 </div>
 		</div>
 		<div class="content">
-			<article class="post">
-	<header class="post-header home">
-		<div class="post-title">Category - <span id='category-name'></span></div>
-	</header>
-
-	<div class="post-content"><ul class="post-list"><li class="post-list-item post-category-jekyllupdate">
-				<!----><span class="post-date">2020/01/02</span>
-				<a class="post-link" href="/jekyll/update/2020/01/02/welcome-to-jekyll.html">
-					Welcome to Jekyll!
-				</a></li><li class="post-list-item post-category-sample">
-				<!----><span class="post-date">2020/01/02</span>
-				<a class="post-link" href="/sample/2020/01/02/post1.html">
-					post-sample
-				</a></li></ul></div>
-</article>
-
-<script src="/public/js/jquery-3.4.1.slim.min.js"></script>
-<script>
-	function removeCategory() {
-		if (window.location.hash) {
-			let hash = window.location.hash.substring(1);
-			$('#category-name').text(hash.substring(0, 1).toUpperCase() + hash.substring(1));
-			let category_class = '.post-category-' + hash;
-			let items = $('.post-list-item').each((i, e) => {
-				if (!$(e).hasClass('post-category-' + hash)) {
-					$(e).hide();
-				} else {
-					$(e).show();
-				}
-			});
-		}
-	}
-	$(window).on('hashchange', () => {
-		removeCategory();
-	});
-	$(document).ready(() => {
-		removeCategory();	
-	})
-	
-</script>
-
+			<ul class="posts-list">
+  
+    
+    
+    
+  </ul>
 		</div>
 	</div>
   </body>
