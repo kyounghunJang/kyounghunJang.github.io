@@ -1,0 +1,14 @@
+I"4<h1 id="dfs">DFS</h1>
+<p>DFS는 깊이 우선 탐색이라고 부르며 그래프에서 깊은 부분을 우선적으로 탐색한다.<br />
+장점: 적은 메모리를 사용한다, 찾으려는 노드가 깊은곳에 있는경우 BFS보다 빠르게 찾을 수 있다.
+단점: 해가 없는 경로여도 끝까지 탐색한다, DFS로 얻은 해가 최단 경로라는 보장이 없다.
+주로 사용되는 문제: 백트래킹, 사이클 찾기, 위상정렬
+DFS는 다음과 같이 재귀함수를 사용시 간결하게 구현할 수 있다.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">visited</span><span class="p">):</span>
+    <span class="n">visited</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">=</span><span class="bp">True</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+            <span class="n">dfs</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">visited</span><span class="p">)</span>
+</code></pre></div></div>
+:ET
