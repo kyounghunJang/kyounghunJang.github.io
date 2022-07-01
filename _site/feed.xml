@@ -1,43 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-01T15:28:54+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">TIL</title><subtitle>by Jang</subtitle><entry><title type="html">DFS,BFS의 기본개념(python)</title><link href="http://localhost:4000/algorism/2022/07/01/post.html" rel="alternate" type="text/html" title="DFS,BFS의 기본개념(python)" /><published>2022-07-01T12:20:23+09:00</published><updated>2022-07-01T12:20:23+09:00</updated><id>http://localhost:4000/algorism/2022/07/01/post</id><content type="html" xml:base="http://localhost:4000/algorism/2022/07/01/post.html"><![CDATA[<h1 id="dfs">DFS</h1>
-<p>DFS는 깊이 우선 탐색이라고 부르며 그래프에서 깊은 부분을 우선적으로 탐색한다.<br />
-장점: 적은 메모리를 사용한다, 찾으려는 노드가 깊은곳에 있는경우 BFS보다 빠르게 찾을 수 있다.
-단점: 해가 없는 경로여도 끝까지 탐색한다, DFS로 얻은 해가 최단 경로라는 보장이 없다.
-주로 사용되는 문제: 백트래킹, 사이클 찾기, 위상정렬
-DFS는 다음과 같이 재귀함수를 사용시 간결하게 구현할 수 있다.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-01T15:43:17+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">TIL</title><subtitle>by Jang</subtitle><entry><title type="html">DFS,BFS의 기본개념(python)</title><link href="http://localhost:4000/algorism/2022/07/01/post.html" rel="alternate" type="text/html" title="DFS,BFS의 기본개념(python)" /><published>2022-07-01T12:20:23+09:00</published><updated>2022-07-01T12:20:23+09:00</updated><id>http://localhost:4000/algorism/2022/07/01/post</id><content type="html" xml:base="http://localhost:4000/algorism/2022/07/01/post.html"><![CDATA[<h1 id="dfs">DFS</h1>
+<h3 id="기본개념dfs는-깊이-우선-탐색이라고-부르며-그래프에서-깊은-부분을-우선적으로-탐색한다">기본개념:DFS는 깊이 우선 탐색이라고 부르며 그래프에서 깊은 부분을 우선적으로 탐색한다.</h3>
+<h3 id="장점-적은-메모리를-사용한다-찾으려는-노드가-깊은곳에-있는경우-bfs보다-빠르게-찾을-수-있다">장점: 적은 메모리를 사용한다, 찾으려는 노드가 깊은곳에 있는경우 BFS보다 빠르게 찾을 수 있다.</h3>
+<h3 id="단점-해가-없는-경로여도-끝까지-탐색한다-dfs로-얻은-해가-최단-경로라는-보장이-없다">단점: 해가 없는 경로여도 끝까지 탐색한다, DFS로 얻은 해가 최단 경로라는 보장이 없다.</h3>
+<h3 id="주로-사용되는-문제-백트래킹-사이클-찾기-위상정렬">주로 사용되는 문제: 백트래킹, 사이클 찾기, 위상정렬</h3>
+<h3 id="dfs는-다음과-같이-재귀함수를-사용시-간결하게-구현할-수-있다">DFS는 다음과 같이 재귀함수를 사용시 간결하게 구현할 수 있다.</h3>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">visited</span><span class="p">):</span>
     <span class="n">visited</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">=</span><span class="bp">True</span>
     <span class="k">print</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
             <span class="n">dfs</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">visited</span><span class="p">)</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="algorism" /><summary type="html"><![CDATA[DFS DFS는 깊이 우선 탐색이라고 부르며 그래프에서 깊은 부분을 우선적으로 탐색한다. 장점: 적은 메모리를 사용한다, 찾으려는 노드가 깊은곳에 있는경우 BFS보다 빠르게 찾을 수 있다. 단점: 해가 없는 경로여도 끝까지 탐색한다, DFS로 얻은 해가 최단 경로라는 보장이 없다. 주로 사용되는 문제: 백트래킹, 사이클 찾기, 위상정렬 DFS는 다음과 같이 재귀함수를 사용시 간결하게 구현할 수 있다. def dfs(graph, v, visited): visited[v]=True print(v,end=' ') for i in graph[v]: if not visited[i]: dfs(graph,i,visited)]]></summary></entry><entry><title type="html">part1</title><link href="http://localhost:4000/kubernetes/docker/2022/06/24/post1.html" rel="alternate" type="text/html" title="part1" /><published>2022-06-24T19:20:23+09:00</published><updated>2022-06-24T19:20:23+09:00</updated><id>http://localhost:4000/kubernetes/docker/2022/06/24/post1</id><content type="html" xml:base="http://localhost:4000/kubernetes/docker/2022/06/24/post1.html"><![CDATA[<h1 id="post-sample">post-sample</h1>
-<blockquote>
-  <p>Hello!</p>
-</blockquote>
+</code></pre></div></div>
 
-<p>This is code</p>
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">print</span> <span class="s1">'hello world'</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="Kubernetes/Docker" /><summary type="html"><![CDATA[post-sample Hello!]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/python/2020/01/02/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-01-02T19:31:29+09:00</published><updated>2020-01-02T19:31:29+09:00</updated><id>http://localhost:4000/python/2020/01/02/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/python/2020/01/02/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<h1 id="bfs">BFS</h1>
+<h3 id="기본개념-bfs는-너비-우선-탐색이라는-의미를-가지며-가까운-노드부터-탐색한다">기본개념: BFS는 너비 우선 탐색이라는 의미를 가지며 가까운 노드부터 탐색한다.</h3>
+<h3 id="장점-항상-최적의해를-찾음을-보장한다">장점: 항상 최적의해를 찾음을 보장한다.</h3>
+<h3 id="단점-최악의-경우에-가장-긴-시간이-걸린다">단점: 최악의 경우에 가장 긴 시간이 걸린다.</h3>
+<h3 id="주로-사용되는-문제-최단거리-위상정렬">주로 사용되는 문제: 최단거리, 위상정렬</h3>
+<h3 id="bfs는-다음과-같이-큐를-이용하여-구현할수-있다">BFS는 다음과 같이 큐를 이용하여 구현할수 있다</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">collecions</span> <span class="kn">import</span> <span class="n">deque</span> 
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="highlighter-rouge">YEAR</code> is a four-digit number, <code class="highlighter-rouge">MONTH</code> and <code class="highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="python" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">post-sample</title><link href="http://localhost:4000/sample/2020/01/02/post1.html" rel="alternate" type="text/html" title="post-sample" /><published>2020-01-02T19:20:23+09:00</published><updated>2020-01-02T19:20:23+09:00</updated><id>http://localhost:4000/sample/2020/01/02/post1</id><content type="html" xml:base="http://localhost:4000/sample/2020/01/02/post1.html"><![CDATA[<h1 id="post-sample">post-sample</h1>
-<blockquote>
-  <p>Hello!</p>
-</blockquote>
-
-<p>This is code</p>
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">print</span> <span class="s1">'hello world'</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="sample" /><summary type="html"><![CDATA[post-sample Hello!]]></summary></entry></feed>
+<span class="k">def</span> <span class="nf">bfs</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">visited</span><span class="p">):</span>
+    <span class="n">que</span> <span class="o">=</span> <span class="n">deque</span><span class="p">([</span><span class="n">start</span><span class="p">])</span>
+    <span class="n">visited</span><span class="p">[</span><span class="n">start</span><span class="p">]</span><span class="o">=</span><span class="bp">True</span>
+    <span class="k">while</span> <span class="n">que</span><span class="p">:</span>
+        <span class="n">v</span><span class="o">=</span><span class="n">que</span><span class="p">.</span><span class="n">popleft</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                <span class="n">que</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span> <span class="bp">True</span> 
+</code></pre></div></div>]]></content><author><name></name></author><category term="algorism" /><summary type="html"><![CDATA[DFS 기본개념:DFS는 깊이 우선 탐색이라고 부르며 그래프에서 깊은 부분을 우선적으로 탐색한다. 장점: 적은 메모리를 사용한다, 찾으려는 노드가 깊은곳에 있는경우 BFS보다 빠르게 찾을 수 있다. 단점: 해가 없는 경로여도 끝까지 탐색한다, DFS로 얻은 해가 최단 경로라는 보장이 없다. 주로 사용되는 문제: 백트래킹, 사이클 찾기, 위상정렬 DFS는 다음과 같이 재귀함수를 사용시 간결하게 구현할 수 있다. def dfs(graph, v, visited): visited[v]=True print(v,end=' ') for i in graph[v]: if not visited[i]: dfs(graph,i,visited)]]></summary></entry><entry><title type="html">DFS와 BFS[1260번]</title><link href="http://localhost:4000/baekjoon/2022/07/01/post1.html" rel="alternate" type="text/html" title="DFS와 BFS[1260번]" /><published>2022-07-01T12:20:23+09:00</published><updated>2022-07-01T12:20:23+09:00</updated><id>http://localhost:4000/baekjoon/2022/07/01/post1</id><content type="html" xml:base="http://localhost:4000/baekjoon/2022/07/01/post1.html"><![CDATA[]]></content><author><name></name></author><category term="baekjoon" /><summary type="html"><![CDATA[]]></summary></entry></feed>
