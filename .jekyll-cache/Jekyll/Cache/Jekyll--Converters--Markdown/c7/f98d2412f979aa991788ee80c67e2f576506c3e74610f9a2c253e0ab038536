@@ -1,84 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="TIL" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>TIL</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/about/">TIL</a>
-	</div>
-	<p class="lead">by Jang</p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title">Pages</li>
-	  <li>
-	  	<a class="nav-item" href="/">Articles</a>
-	  </li>
-	  
-	  
-	    
-	  
-	    
-	      
-	        <li>
-	        	<a class="nav-item" href="/about/">
-	            	About
-	            </a>
-	        </li>
-	      
-	    
-	  
-	    
-	      
-	    
-	  
-	    
-	  
-	    
-	  
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title">Categories</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#algorithm">
-				<span class="name">algorithm</span>
-				<span class="badge">6</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-		</div>
-		<div class="content">
-			<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			토마토[백준 7569번]
-		</div>
-		<time class="post-date dt-published" datetime="2022-07-05T20:21:00+09:00" itemprop="datePublished">2022/07/05
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p><a href="https://www.acmicpc.net/problem/2667">백준 7569번 바이러스 문제링크</a></p>
+I"�<p><a href="https://www.acmicpc.net/problem/2667">백준 7569번 바이러스 문제링크</a></p>
 
 <p><img src="https://user-images.githubusercontent.com/77001421/177326030-8df23f04-b17e-4b37-abe6-06255c025044.png" alt="백준 7569번 문제" width="1000" height="1000" /></p>
 
@@ -122,10 +42,4 @@
     <span class="n">day</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">day</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">j</span><span class="p">))</span>
 <span class="k">print</span><span class="p">(</span><span class="n">day</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div></div>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET
