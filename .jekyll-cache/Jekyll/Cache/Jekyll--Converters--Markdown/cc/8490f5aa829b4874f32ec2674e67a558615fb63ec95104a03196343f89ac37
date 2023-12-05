@@ -1,9 +1,0 @@
-I"n<table onclick="window.open('https://www.acmicpc.net/problem/1260','','')" style="cursor:pointer;" border="1">
-<thead>
-  <tr>
-    <td><img src="http://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/images/big-square.png" alt="Image" width="200" height="150" /></td>
-    <td bgcolor="#9aff99"># 백준 1260번 DFS와BFS 문제 링크 <br />그래프를 DFS로 탐색한 결과와 BFS로 탐색한 결과를 출력하는 프로그램을 작성하시오. 단, 방문할 수 있는 정점이 여러 개인 경우에는 정점 번호가 작은 것을 먼저 방문하고,<br />www.acmicpc.net</td>
-  </tr>
-</thead>
-</table>
-:ET
