@@ -3,6 +3,8 @@ layout: post
 title: About
 ---
 
-This is an example page!
+Currently, the medical field is utilizing medical big data for various research and artificial intelligence development. However, in order to utilize these data, it is necessary to de-identify personal information, which is sensitive information. 
+**Therefore, in this project, we created a site where medical data can be de-identified and searched.**
 
-Actually, it has the same layout of a post...
+
+

@@ -1,0 +1,86 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Form (Design Only)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        input, textarea {
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+    <hr>
+    <h2 style="color: white;">Contact Us</h2>
+    
+    <form>
+        <label for="recipientEmail" style="color: white;">Name</label>
+        <input type="email" id="recipientEmail" name="recipientEmail" required>
+
+        <label for="subject" style="color: white;">Email address</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message" style="color: white;">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="button" onclick="simulateEmail()">Send</button>
+    <script>
+        function simulateEmail() {
+            // 확인 버튼을 누르면 true, 취소 버튼을 누르면 false 반환
+            var isConfirmed = confirm("Email simulation:\nRecipient - " + document.getElementById("recipientEmail").value +
+                    "\nSubject - " + document.getElementById("subject").value +
+                    "\nMessage - " + document.getElementById("message").value);
+
+            if (isConfirmed) {
+                alert("Email sent successfully!");
+            } else {
+                alert("Email sending canceled.");
+            }
+        }
+    </script>
+
+</body>
+</html>

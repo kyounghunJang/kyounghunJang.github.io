@@ -1,12 +1,15 @@
 navbar_entries:
-  - title: about
+  - title: About
     url: about
 
-  - title: blog
+  - title: Features
     url: blog
 
-  - title: website
-    url: https://www.abhinav.co
+  - title: Contact us
+    url: contact
+
+  - title: Community
+    url: https://groups.google.com/g/medisecuremask
 
 project_entries:
   - title: Project 1
