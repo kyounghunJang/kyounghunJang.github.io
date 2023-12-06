@@ -154,4 +154,3 @@ If you like Moonwalk, do check out my other projects
 ✨⚡If you like my work, you can [buy me a coffee](https://buymeacoffee.com/abhinavs)                
 
 
-[GitHub Pages](https://kyounghunjang.github.io/)

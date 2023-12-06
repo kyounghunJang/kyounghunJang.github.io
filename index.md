@@ -10,7 +10,7 @@ layout: home
 
 ##  Project goals
 - Identify and de-identify personal information in images
-- 
+- Automated data handling processes
 
 ## Recommended users
 - Medical researchers
