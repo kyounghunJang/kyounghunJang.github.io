@@ -1,0 +1,45 @@
+I"�<p>It is a project to utilize medical big data in the medical field.
+**It plays a role in lifting the recognition of sensitive personal information in medical data so that the removed medical data can be used as papers or medical information to act meaningfully.</p>
+<p>We proceed with this project with the interaction of OCR, de-identification model, and web.</p>
+
+<p><a href="https://github.com/kyounghunJang/Medisecuremask" target="_blank">
+    <img src="./assets/images/favicon/download.png" alt="download banner" width="300" height="100" style="display: inline-block;" />
+</a>
+<a href="https://medisecuremask.readthedocs.io/en/latest/index.html" target="_blank">
+    <img src="./assets/images/favicon/docs.png" alt="docs banner" width="300" height="90" style="display: inline-block;" />
+</a></p>
+
+<h2 id="project-goals">Project goals</h2>
+<ul>
+  <li>Identify and de-identify personal information in images</li>
+  <li>Automated data handling processes</li>
+</ul>
+
+<h2 id="recommended-users">Recommended users</h2>
+<ul>
+  <li>Medical researchers</li>
+  <li>Students working on medical projects</li>
+  <li>Hospitals doing medical research</li>
+</ul>
+
+<h2 id="lastest-news">Lastest News</h2>
+
+<ul>
+    
+      <li class="post-list-item">
+        <span class="home-date">
+          2023-12-06»
+        </span>
+        <a href="/start">Start</a>
+      </li>
+    
+      <li class="post-list-item">
+        <span class="home-date">
+          2023-12-05»
+        </span>
+        <a href="/eeee">Eeee</a>
+      </li>
+    
+  </ul>
+
+:ET
